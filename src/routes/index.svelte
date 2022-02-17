@@ -95,7 +95,7 @@
 
 			<div>
 				<span class="font-semibold"> <pre> Logic:</pre></span>
-				First the built in js classes and the "hidden" property from the class
+				First, removed the built in js classes and the "hidden" property from the class
 				<span> <pre> let showDropdown = false;</pre></span>
 				<span> <pre> on:click= () => (showDropdown = !showDropdown)</pre></span>
 			</div>
