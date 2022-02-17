@@ -45,24 +45,26 @@
 			<header class="font-bold text-lg text-center text-black">Requirements Flowbite</header>
 			<section class="bg-slate-200 rounded-lg m-2 p-2">
 				<h1 class="font-semibold">
-					Requirements:
+					Requirements: TailwindCSS +
 					<a
 						class="hover:text-blue-600"
 						href="https://flowbite.com/docs/getting-started/introduction/#require-via-npm"
-						>Check them Here!</a
+						>Flowbite.js</a
 					>
 				</h1>
-				flowbite was difficult to install so the javascript functionalities are implemented in svelte.
+				Flowbite was difficult to install and set up so the javascript functionalities are implemented
+				in svelte.
 			</section>
 		</div>
 		<!-- Requirements Tailwind ui -->
 		<div class="p-4 m-4 flex-col bg-white rounded-xl shadow-md">
 			<header class="font-bold text-lg text-center text-black">Requirements TailwindUI</header>
 			<section class="bg-slate-200 rounded-lg m-2 p-1">
-				<h1 class="font-semibold">Requirements:</h1>
-				Only Tailwindcss, So this comparison is only regarding css, again no out of the box javascript
-				functionalities implemented
+				<h1 class="font-semibold">Requirements: Only TailwindCSS</h1>
+				So this comparison is only regarding css, again no out of the box javascript functionalities
+				implemented.<br />
 			</section>
+			<span>*only the free components were compared</span>
 		</div>
 		<!-- Flowbite Dropdown -->
 		<div class="p-4 m-4 flex-col bg-white rounded-xl shadow-md">
