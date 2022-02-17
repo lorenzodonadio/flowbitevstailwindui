@@ -66,6 +66,26 @@
 			</section>
 			<span>*only the free components were compared</span>
 		</div>
+	</div>
+	<!-- Tailwindui Navbar -->
+	<div class="py-4 m-4 flex-col bg-white rounded-xl shadow-md">
+		<header class="font-bold text-lg text-center text-black">Tailwind Navbar</header>
+		<div class="px-4 my-2">
+			<span class="font-semibold"> <pre> Logic:</pre></span>
+			same as the dropdown, for the user info. and for the mobile menu
+		</div>
+		<NavbarTui />
+	</div>
+	<!-- Flowbite Navbar -->
+	<div class="py-4 m-4 flex-col bg-white rounded-xl shadow-md">
+		<header class="font-bold text-lg text-center text-black">Flowbite Navbar</header>
+		<div class="px-4 my-2">
+			<span class="font-semibold"> <pre> Logic:</pre></span>
+			same as the dropdown, for the the mobile menu
+		</div>
+		<NavbarFb />
+	</div>
+	<div class="grid lg:grid-cols-2 grid-cols-1">
 		<!-- Flowbite Dropdown -->
 		<div class="p-4 m-4 flex-col bg-white rounded-xl shadow-md">
 			<header class="font-bold text-lg text-center text-black">Flowbite Dropdown</header>
@@ -109,24 +129,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<!-- Tailwindui Navbar -->
-	<div class="py-4 m-4 flex-col bg-white rounded-xl shadow-md">
-		<header class="font-bold text-lg text-center text-black">Tailwind Navbar</header>
-		<div class="px-4 my-2">
-			<span class="font-semibold"> <pre> Logic:</pre></span>
-			same as the dropdown, for the user info.
-		</div>
-		<NavbarTui />
-	</div>
-	<!-- Flowbite Navbar -->
-	<div class="py-4 m-4 flex-col bg-white rounded-xl shadow-md">
-		<header class="font-bold text-lg text-center text-black">Flowbite Navbar</header>
-		<div class="px-4 my-2">
-			<span class="font-semibold"> <pre> Logic:</pre></span>
-			None needed
-		</div>
-		<NavbarFb />
 	</div>
 </div>

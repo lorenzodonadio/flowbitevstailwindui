@@ -1,5 +1,6 @@
 <script>
 	let showDropdown = false;
+	let showMobileMenu = false;
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
@@ -9,6 +10,7 @@
 			<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
 				<!-- Mobile menu button-->
 				<button
+					on:click={() => (showMobileMenu = !showMobileMenu)}
 					type="button"
 					class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
 					aria-controls="mobile-menu"
@@ -196,32 +198,34 @@
 	</div>
 
 	<!-- Mobile menu, show/hide based on menu state. -->
-	<div class="sm:hidden" id="mobile-menu">
-		<div class="px-2 pt-2 pb-3 space-y-1">
-			<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-			<a
-				href="#"
-				class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-				aria-current="page">Dashboard</a
-			>
+	{#if showMobileMenu}
+		<div class="sm:hidden" id="mobile-menu">
+			<div class="px-2 pt-2 pb-3 space-y-1">
+				<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+				<a
+					href="#"
+					class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+					aria-current="page">Dashboard</a
+				>
 
-			<a
-				href="#"
-				class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-				>Team</a
-			>
+				<a
+					href="#"
+					class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+					>Team</a
+				>
 
-			<a
-				href="#"
-				class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-				>Projects</a
-			>
+				<a
+					href="#"
+					class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+					>Projects</a
+				>
 
-			<a
-				href="#"
-				class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-				>Calendar</a
-			>
+				<a
+					href="#"
+					class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+					>Calendar</a
+				>
+			</div>
 		</div>
-	</div>
+	{/if}
 </nav>
