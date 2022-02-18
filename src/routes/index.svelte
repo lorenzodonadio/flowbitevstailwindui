@@ -69,6 +69,21 @@
 	</div>
 	<!-- Tailwindui Navbar -->
 	<div class="py-4 m-4 flex-col bg-white rounded-xl shadow-md">
+		<header class="font-bold text-lg text-center text-black">Comments</header>
+		<p class="px-24 py-2 font-semibold text-md text-black ">
+			Both tailwindui and flowbite needed some extra logic easily implemented in svelte:
+		</p>
+		<ul class="px-24 py-2 text-md  text-black">
+			<li>• For the Tailwind Ui Navbar the logic made it work as expected</li>
+			<li>• For Flowbite navbar, hiding the mobile menu also hid the desktop menu</li>
+			<li>• Tailwind UI dropdowns work fine with 3 lines of extra logic</li>
+			<li>
+				• Flowbite dropdowns move the text below them, and dont work well when wrapped in other divs
+				with flex properties
+			</li>
+		</ul>
+	</div>
+	<div class="py-4 m-4 flex-col bg-white rounded-xl shadow-md">
 		<header class="font-bold text-lg text-center text-black">Tailwind Navbar</header>
 		<div class="px-4 my-2">
 			<span class="font-semibold"> <pre> Logic:</pre></span>
